@@ -6,10 +6,10 @@ function convert() {
   temp = Number(temp);
 
   if (cbutton.checked) {
-    temp = (temp-32)*(5/9);
-    mytext.innerHTML = "Temprature in Celsius : " + temp.toPrecision(2) + "°C";
+    temp = (temp - 32) * (5 / 9);
+    mytext.innerHTML = "Temprature in Celsius : " + temp.toFixed(2) + "°C";
   } else if (fbutton.checked) {
-    temp = ((temp * 9) / 5 + 32);
-    mytext.innerHTML = "Temprature in Fahrenheit : " + temp.toPrecision(2) + "°F";
+    temp = (temp * 9) / 5 + 32;
+    mytext.innerHTML = "Temprature in Fahrenheit : " + temp.toFixed(2) + "°F";
   }
 }
